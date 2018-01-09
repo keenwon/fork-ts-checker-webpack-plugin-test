@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h2>fork-ts-checker-webpack-plugin-test</h2>
-    <p>{{data}}</p>
+    <p>test</p>
   </div>
 </template>
 
@@ -9,14 +8,16 @@
   import Vue from 'vue';
   import { Component, Prop, Watch } from 'vue-property-decorator';
 
+  import '../../../css/common/base.scss';
+
   @Component
   export default class App extends Vue {
-    private data: string = 'hello world!';
+
   }
 </script>
 
 <style lang="scss">
-  h2 {
+  p {
     color: #09f;
   }
 </style>

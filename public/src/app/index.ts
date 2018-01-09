@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import App from './index.vue';
+import App from './views/App.vue';
 
 // tslint:disable-next-line
 new Vue({

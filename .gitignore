@@ -4,4 +4,32 @@
 node_modules
 npm-debug.log
 package-lock.json
-src/dist/
+
+# 测试覆盖率报告
+coverage
+
+# webpack profile 文件
+build/webpack.stats.json
+
+# emacs临时文件
+\#*\#
+
+# 前端生成文件
+public/dist/
+
+# mock 文件
+mock.data
+nei.10971.430a00541a7c161da34f83875a66351f
+
+# 后端迁移过来的
+*.iml
+!/test/**/*.css
+uploads
+downloads
+log
+logs
+deploy/*.log
+deploy/*.json
+deploy/*.js
+/template/
+*.map
