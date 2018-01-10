@@ -12,7 +12,8 @@
 
   @Component
   export default class App extends Vue {
-
+    public foo: string = this.bar;
+    private bar: string;
   }
 </script>
 

@@ -37,21 +37,7 @@ const config = {
       }
     }),
     new webpack.NoEmitOnErrorsPlugin(),
-    // new HappyPack({
-    //   id: 'ts',
-    //   threads: 4,
-    //   loaders: [
-    //     {
-    //       loader: 'ts-loader',
-    //       options: {
-    //         appendTsSuffixTo: [/\.vue$/],
-    //         happyPackMode: true
-    //       }
-    //     }
-    //   ]
-    // }),
     new ForkTsCheckerWebpackPlugin({
-      async: false,
       tslint: true,
       vue: true
     })
@@ -68,7 +54,8 @@ const config = {
         include: [getPath('public')],
         loader: 'ts-loader',
         options: {
-          transpileOnly: true
+          transpileOnly: true,
+          appendTsSuffixTo: [/\.vue$/]
         }
       },
       {
